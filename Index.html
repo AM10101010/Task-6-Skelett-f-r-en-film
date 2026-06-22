@@ -4,15 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operation Bäver </title>
+    <title>Operation Bäver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #F7F4EF;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .poster {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .title-main {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 10vw, 5.5rem);
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1;
+            letter-spacing: 0.02em;
+        }
+
+        .video-wrapper {
+            width: 100%;
+            max-width: 560px;
+        }
+
+        iframe {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            height: auto;
+            border: none;
+        }
+
+    </style>
 </head>
 
 <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ohgh7Prwrws?si=TFP2kbf16ULy-Vrg"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+    <div class="poster">
+        <p class="title-eyebrow">******************************************************************</p>
+        <h1 class="title-main">Operation Bäver</h1>
+        <div class="rule"></div>
+        <p class="title-eyebrow">******************************************************************</p>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Ohgh7Prwrws?si=TFP2kbf16ULy-Vrg"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
-
 </html>
